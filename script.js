@@ -53,6 +53,15 @@ function cidadeEncontrada(resposta){
 }
 
 function error(resposta){
-    console.log(resposta.status)
+    if(resposta.status === 404) { 
+        let mensagemError = document.querySelector('.error')
+        let mostrarMensagemError = document.querySelector('.error-message')
+
+        mensagemError.innerHTML = 'Digite uma cidade valida'
+        mostrarMensagemError.classList.remove('escondido')  
+
+        document.querySelector('.container-cidade-encontrada').classList.add('escondido')
+
+    }
 
 }
