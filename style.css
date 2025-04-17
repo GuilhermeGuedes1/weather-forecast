@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html { 
+    height: 100vh;
+    width: 100W;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content { 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    max-height: 400px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2e42;
+    color: white;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
+    overflow: hidden;
+}
+
+.mostrar-cidade { 
+    height: 405px;
+}
+
+.mostrar-error { 
+    height: 200px;
+}
+
+
+.container-cidade-encontrada { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+
+.container-input { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+input { 
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+   
+}
+
+.container-input i { 
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+.container-input i:hover {
+    transform: scale(1.1); 
+    
+}
+
+.cidade-encontrada { 
+    transition: all 0.5s ease;
+}
+
+.cidade { 
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.pais { 
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+
+}
+
+.temperatura { 
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: rgb(227, 227, 4);
+}
+
+.detalhes { 
+    display: flex;
+    gap: 10px;
+}
+
+.error { 
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+}
+
+.escondido { 
+    display: none;
+}
+

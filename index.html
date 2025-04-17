@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Previsão do tempo</title>
+  </head>
+  <body>
+    <main>
+        <div class="content">
+            <h1>☁️Previsão do tempo</h1>
+            <div class="container-input">
+            <i class="bx bx-map-pin"></i>
+            <input class="input" type="text" placeholder="Digite a cidade..." />
+            <i class="bx bx-search" onclick="buscarCidade()"></i>
+            </div>
+            <div class="container-cidade-encontrada escondido">
+                <div><span class="cidade">Qualquer cidade</span>, <span class="pais">Usa</span></div>
+                <div class="temperatura">28°</div>
+                <img src="" class="tempo"></img>
+                <div class="descricao"></div>
+                <div class="detalhes">
+                  <div class="container-vento">💨 Vento: <span class="vento">15</span>km/h</div> | <div class="container-umidade">💧Umidade: <span class="umidade">60</span>%</div>
+                </div>
+            </div>
+            <div class="error-message escondido">
+                <p class="error">Cidade não encontrada</p>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
