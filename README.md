@@ -19,4 +19,4 @@ Um app simples de previsão do tempo que mostra **temperatura**, **vento** e **u
 ## 💻 Como usar
 
 Acesse:
-    https://github.com/guilhermeguedes1/weather-forecast.git
+    https://guilhermeguedes1.github.io/weather-forecast/
