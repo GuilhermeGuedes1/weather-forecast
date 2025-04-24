@@ -1,16 +1,22 @@
- 
+let input = document.querySelector('input')
+
+input.addEventListener('keydown', function(event) { 
+    if(event.key === 'Enter'){ 
+        buscarCidade()
+    }
+})
 
 function buscarCidade(){
     let inputCidade = document.querySelector('.input').value
 
     if (inputCidade === '') { 
         let mensagemError = document.querySelector('.error')
-        let mostrarMensagemError = document.querySelector('.error-message')
+        let mostrarCidade = document.querySelector('.container-cidade-encontrada')
 
         mensagemError.innerHTML = 'Favor, digite uma cidade'
-        mostrarMensagemError.classList.remove('escondido')  
+        mensagemError.classList.add('mostrar-error') 
 
-        document.querySelector('.container-cidade-encontrada').classList.add('escondido')
+        mostrarCidade.classList.remove('mostrar-conteudo')
         
     } else{
 
@@ -31,11 +37,9 @@ function cidadeEncontrada(resposta){
     let umidade = document.querySelector('.umidade')
 
     let mostrarCidade = document.querySelector('.container-cidade-encontrada')
-    mostrarCidade.classList.remove('escondido')
+    mostrarCidade.classList.add('mostrar-conteudo')
 
     let dados = resposta.data
-
-
 
     let iconeTempo = dados.weather[0].icon
 
